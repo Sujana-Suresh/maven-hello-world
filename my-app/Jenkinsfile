@@ -8,6 +8,10 @@ node {
         stage ('build')  {
     sh "${mvnHome}/bin/mvn clean install -f my-app/pom.xml"
     }
+        
+        stage ('deploy')  {
+    echo "This is my deploy step: Hello world!!"
+    }
    
 
       }
